@@ -294,8 +294,10 @@ main {
         margin-top: 0;
         display: block;
         height: auto; }
-        main .main-side nav ul li {
-          display: block;
-          width: 100%; } }
+        main .main-side nav ul {
+          display: block; }
+          main .main-side nav ul li {
+            display: block;
+            width: 100%; } }
 
 /*# sourceMappingURL=main_style.css.map */
