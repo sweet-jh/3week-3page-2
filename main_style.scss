@@ -8,7 +8,9 @@ li {
 a {
 	text-decoration: none;
 }
-
+body {
+	background: #f2eee8;
+}
 header {
 	z-index: 1;
 	width: 100%;
@@ -41,6 +43,7 @@ header {
 			}
 			li:first-child {
 				background: #81aad3;
+				color: white;
 			}
 		}
 		a {
@@ -77,8 +80,7 @@ header {
 	}
 }
 
-main {
-	background: #f2eee8; 
+main { 
 	position: relative;
 	top: 76px;
 	display: flex;
@@ -91,6 +93,7 @@ main {
 		background: #81a8ca;
 		.person-introduce {
 			text-align: center;
+			color: white;
 			img {
 				display: inline-block;
 				margin-top: 60px;
@@ -100,7 +103,8 @@ main {
 				height: 70px;
 			}
 			h4 {
-				margin-bottom: 10px;
+				margin-bottom: 16px;
+				margin-top: 10px;
 			}
 			p {
 				margin-bottom: 20px;
@@ -192,6 +196,7 @@ main {
 					border-radius: 100px;
 					width: 40px;
 					height: 40px;
+					float: left;
 				}
 				.article-item {
 					display: inline-block;
@@ -202,6 +207,9 @@ main {
 							color: #ccc;
 						}
 					}
+					p {
+						color: #8c8c8c;
+					}
 					ul {
 						margin-top: 20px;
 						li {
@@ -211,6 +219,9 @@ main {
 								color: #8c8c8c;
 							}
 						}
+					}
+					video {
+						width: 100%;
 					}
 				}
 			}
@@ -287,6 +298,41 @@ main {
 		}
 	}
 
+}
+
+
+@media (max-width: 1024px) {
+	main {
+		position: relative;
+		display: block;
+		overflow: hidden;
+		.left-side {
+			display: inline-block;
+			width: 30%;
+			.activities {
+				margin-bottom: 20px;
+			}
+		}
+		.main-side {
+			float: right;
+			display: inline-block;
+			width: 66%;
+		}
+		.right-side {
+			display: inline-block;
+			width: 30%;
+			float: left;
+			.trends {
+				display: none;
+			}
+			.left-follower {
+				margin-bottom: 20px;
+				.follow-head {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
 }
 
 
