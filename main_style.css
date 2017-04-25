@@ -144,7 +144,7 @@ main {
           height: 100%; }
           main .main-side nav ul li h4 {
             color: #ccc;
-            margin-top: 30px; }
+            padding-top: 30px; }
           main .main-side nav ul li p {
             color: black;
             font-weight: bold;
@@ -240,7 +240,7 @@ main {
             text-align: center;
             margin-right: 10px; }
 
-@media (max-width: 1024px) {
+@media (min-width: 461px) and (max-width: 1024px) {
   main {
     position: relative;
     display: block;
@@ -264,5 +264,32 @@ main {
         margin-bottom: 20px; }
         main .right-side .left-follower .follow-head {
           margin-top: 30px; } }
+@media (max-width: 460px) {
+  header nav ul li {
+    display: none; }
+  header nav ul li:first-child {
+    display: inline-block; }
+  header nav a {
+    font-size: 30px; }
+  header nav .nav-right .search {
+    display: none; }
+
+  main {
+    display: block;
+    top: 120px; }
+    main .left-side {
+      display: none; }
+    main .right-side {
+      display: none; }
+    main .main-side {
+      display: block;
+      width: 100%; }
+      main .main-side nav {
+        margin-top: 0;
+        display: block;
+        height: auto; }
+        main .main-side nav ul li {
+          display: block;
+          width: 100%; } }
 
 /*# sourceMappingURL=main_style.css.map */

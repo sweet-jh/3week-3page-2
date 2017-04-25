@@ -169,7 +169,7 @@ main {
 					height: 100%;
 					h4 {
 						color: #ccc;
-						margin-top: 30px;
+						padding-top: 30px;
 					}
 					p {
 						color: black;
@@ -301,7 +301,7 @@ main {
 }
 
 
-@media (max-width: 1024px) {
+@media (min-width: 461px) and (max-width: 1024px) {
 	main {
 		position: relative;
 		display: block;
@@ -329,6 +329,55 @@ main {
 				margin-bottom: 20px;
 				.follow-head {
 					margin-top: 30px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 460px) {
+	header {
+		nav {
+			ul {
+				li {
+					display: none;
+				}
+				li:first-child {
+					display: inline-block;
+				}
+			}
+			a {
+				font-size: 30px;
+			}
+			.nav-right {
+				.search {
+					display: none;
+				}
+			}
+		}
+	}
+
+	main {
+		display: block;
+		top: 120px;
+		.left-side {
+			display: none;
+		}
+		.right-side {
+			display: none;
+		}
+		.main-side {
+			display: block;
+			width: 100%;
+			nav {
+				margin-top: 0;
+				display: block;
+				height: auto;
+				ul {
+					li {
+						display: block;
+						width: 100%;
+					}
 				}
 			}
 		}
