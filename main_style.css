@@ -298,6 +298,11 @@ main {
           display: block; }
           main .main-side nav ul li {
             display: block;
-            width: 100%; } }
+            width: 100%; }
+      main .main-side div.main-articles article img {
+        width: 10%;
+        height: 10%; }
+      main .main-side div.main-articles article .article-item {
+        width: 80%; } }
 
 /*# sourceMappingURL=main_style.css.map */

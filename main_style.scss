@@ -387,6 +387,17 @@ main {
 					}
 				}
 			}
+			div.main-articles {
+				article {
+					img {
+						width: 10%;
+						height: 10%;
+					}
+					.article-item {
+						width: 80%;
+					}
+				}
+			}
 		}
 	}
 }
